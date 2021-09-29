@@ -10,7 +10,7 @@ import Portfolio from "./pages/Portfolio";
 import ProfessionalSummary from "./pages/ProfessionalSummary";
 import ProfessionalExperience from "./pages/ProfessionalExperience";
 // import ContactForm from "./components/Contact/index.js";
-import ContactPages from "./pages/Contact.js"
+import ContactPages from "./pages/Contact.js";
 import logo from "./assets/logo/PADSlogo.png";
 import "./App.css";
 // import { Navbar } from 'react-bootstrap';
@@ -26,45 +26,46 @@ class App extends React.Component {
         { title: "Professional Experience", path: "/professionalExperience" },
         { title: "Contact", paht: "/contact" },
       ],
-      portfolio: {
+      professionalSummary: {
         title: "Jacqueline of all Trades",
         subTitle: "Ventures into Web development",
         subscript: "explorer my ventures below!",
       },
-      professionalSummary: {
-        title: "Summary",
+      portfolio: {
+        title: "Projects",
       },
       professionalExperience: {
         title: "Resume",
       },
       contact: {
         title: "Build the Universe Together",
-      }
-    }
+      },
+    };
   }
   render() {
     return (
       <Router>
         <Container className="p=0" fluid={true}>
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
-          <Navbar.Brand href="#home">
-      <img
-        src={logo}
-        width="30"
-        height="30"
-        className="d-inline-block align-top"
-        alt="logo"
-      />
-    </Navbar.Brand>
+          {/* <Navbar className="border-bottom" bg="transparent" expand="lg"> */}
+          <Navbar className="border-bottom" bg="dark" Variant="dark" expand="lg">
+            <Navbar.Brand href="#home">
+              <img
+                src={logo}
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+                alt="logo"
+              />
+            </Navbar.Brand>
             {/* <Navbar.Brand>Patrena Ann Smith</Navbar.Brand> */}
-            <Navbar.Toggle className="border=0" aria-controls="navbar-toggle"/>
+            <Navbar.Toggle className="border=0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/">
-                  Portfolio
+                  Professional Summary
                 </Link>
                 <Link className="nav-link" to="/professionalSummary">
-                  Professional Summary
+                  Portfolio
                 </Link>
                 <Link className="nav-link" to="/professionalExperience">
                   Professional Experience
@@ -76,13 +77,38 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          <Route path="/" exact render={()=><Portfolio title={this.state.portfolio.title} subTitle={this.state.portfolio.subTitle} subscript={this.state.portfolio.subscript}/>}/>  
-          <Route path="/professionalSummary" exact render={()=><ProfessionalSummary title={this.state.professionalSummary.title}/>}/> 
-          <Route path="/professionalExperience" exact render={()=><ProfessionalExperience title={this.state.professionalExperience.title}/>}/>
-          <Route path="/contact" exact render={()=><Contact title={this.state.contact.title}/>}/>
-          <Footer>
-        </Footer>
-        </Container>      
+          <Route
+            path="/"
+            exact
+            render={() => (
+              <ProfessionalSummary
+                title={this.state.professionalSummary.title}
+                subTitle={this.state.professionalSummary.subTitle}
+                subscript={this.state.professionalSummary.subscript}
+              />
+            )}
+          />
+          <Route
+            path="/portfolio"
+            exact
+            render={() => <Portfolio title={this.state.portfolio.title} />}
+          />
+          <Route
+            path="/professionalExperience"
+            exact
+            render={() => (
+              <ProfessionalExperience
+                title={this.state.professionalExperience.title}
+              />
+            )}
+          />
+          <Route
+            path="/contact"
+            exact
+            render={() => <Contact title={this.state.contact.title} />}
+          />
+          <Footer></Footer>
+        </Container>
       </Router>
     );
   }

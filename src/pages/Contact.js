@@ -2,7 +2,7 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Content from "../components/content";
 import Button from "react-bootstrap/Button";
-// import Hero from "../components/Hero";
+import Hero from "../components/Hero/index.js";
 
 class ContactPage extends React.Component {
   constructor(props) {
@@ -36,7 +36,7 @@ class ContactPage extends React.Component {
   render() {
     return (
       <div>
-        {/* <Hero title={this.props.title}/> */}
+        <Hero title={this.props.title}/>
         <Content>
           <form>
             <Form.Group>

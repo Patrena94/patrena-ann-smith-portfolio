@@ -1,5 +1,5 @@
 // import react from "react";
-
+import Hero from"../components/Hero/index.js";
 // function ControlledCarousel() {
 //   const [index, setIndex] = useState(0);
 
@@ -47,3 +47,4 @@
 //   );
 // }
 // export default Carousels;
+export default Portfolio;
