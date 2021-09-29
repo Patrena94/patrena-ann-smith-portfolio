@@ -1,63 +1,104 @@
-import React, { useState } from 'react';
+import React from "react";
+import Form from "react-bootstrap/Form";
+import Content from "../components/content";
+import Button from "react-bootstrap/Button";
+// import Hero from "../components/Hero";
 
-import { validateEmail } from '../../utils/helpers';
+class ContactPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: " ",
+      email: " ",
+      subject: " ",
+      message: " ",
+      disabled: false,
+      emailSent: null,
+    };
+  }
 
-function ContactForm() {
-  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+  handleChange = (event) => {
+    const target = event.target;
+    // can use the statement immediately below to add a check book to follow upon submitting artiles, etc.
+    const value = target.type === "checkbox" ? target.checked : target.value;
+    const name = target.name;
 
-  const [errorMessage, setErrorMessage] = useState('');
-  const { name, email, message } = formState;
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!errorMessage) {
-      setFormState({ [e.target.name]: e.target.value });
-      console.log('Form', formState);
-    }
+    this.setState({ [name]: value });
   };
 
-  const handleChange = (e) => {
-    if (e.target.name === 'email') {
-      const isValid = validateEmail(e.target.value);
-      if (!isValid) {
-        setErrorMessage('Your email is invalid.');
-      } else {
-        setErrorMessage('');
-      }
-    } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
-      } else {
-        setErrorMessage('');
-      }
-    }
-  };
+  handleSubmit =(event) =>{
+      event.preventDefault();
+      this.setState({
+          disabled: true,
+      });
+  }
 
-  return (
-    <section>
-      <h1 data-testid="h1tag">Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-        </div>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
-        <button data-testid="button" type="submit">Submit</button>
-      </form>
-    </section>
-  );
+  render() {
+    return (
+      <div>
+        {/* <Hero title={this.props.title}/> */}
+        <Content>
+          <form>
+            <Form.Group>
+              <Form.Label htmlFor="full-name"> Full Name</Form.Label>
+              <Form.Control
+                id="full-name"
+                name="name"
+                type="text"
+                value={this.state.name}
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Group>
+              <Form.Label htmlFor="email"> Email</Form.Label>
+              <Form.Control
+                id="email"
+                name="email"
+                type="email"
+                value={this.state.email}
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Group>
+              <Form.Label htmlFor="subject"> Subject</Form.Label>
+              <Form.Control
+                id="subject"
+                name="subject"
+                type="text"
+                value={this.state.subject}
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Group>
+              <Form.Label htmlFor="message"> Message</Form.Label>
+              <Form.Control
+                id="message"
+                name="message"
+                as="textarea"
+                rows="8"
+                value={this.state.message}
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+
+            <Button
+              className="d-inlin-block"
+              variant="primary"
+              type="submit"
+              disabled={this.state.disabled}
+            >
+              Send
+            </Button>
+            {this.state.emailSent === true && (
+              <p className="d-inline success-msg">Email Sent</p>
+            )}
+            {this.state.emailSent === false && (
+              <p className="d-inline err-msg">Email Not Sent</p>
+            )}
+          </form>
+        </Content>
+      </div>
+    );
+  }
 }
-
-export default ContactForm;
+export default ContactPage;

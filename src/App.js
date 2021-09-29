@@ -4,12 +4,14 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Carousels from "react-bootstrap/Carousels"
+// import Carousels from "react-bootstrap/Carousels"
 import Footer from "./components/Footer/index.js";
 import Portfolio from "./pages/Portfolio";
 import ProfessionalSummary from "./pages/ProfessionalSummary";
 import ProfessionalExperience from "./pages/ProfessionalExperience";
-import ContactForm from "./pages/Contact";
+// import ContactForm from "./components/Contact/index.js";
+import ContactPages from "./pages/Contact.js"
+import logo from "./assets/logo/PADSlogo.png";
 import "./App.css";
 // import { Navbar } from 'react-bootstrap';
 
@@ -45,7 +47,16 @@ class App extends React.Component {
       <Router>
         <Container className="p=0" fluid={true}>
           <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand>Patrena Ann Smith</Navbar.Brand>
+          <Navbar.Brand href="#home">
+      <img
+        src={logo}
+        width="30"
+        height="30"
+        className="d-inline-block align-top"
+        alt="logo"
+      />
+    </Navbar.Brand>
+            {/* <Navbar.Brand>Patrena Ann Smith</Navbar.Brand> */}
             <Navbar.Toggle className="border=0" aria-controls="navbar-toggle"/>
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
@@ -61,6 +72,7 @@ class App extends React.Component {
                 <Link className="nav-link" to="/Contact">
                   Contact
                 </Link>
+                {/* <ContactForm></ContactForm> */}
               </Nav>
             </Navbar.Collapse>
           </Navbar>
