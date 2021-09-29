@@ -4,11 +4,12 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import Carousels from "react-bootstrap/Carousels"
 import Footer from "./components/Footer/index.js";
 import Portfolio from "./pages/Portfolio";
 import ProfessionalSummary from "./pages/ProfessionalSummary";
 import ProfessionalExperience from "./pages/ProfessionalExperience";
-import Contact from "./pages/Contact";
+import ContactForm from "./pages/Contact";
 import "./App.css";
 // import { Navbar } from 'react-bootstrap';
 
