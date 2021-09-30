@@ -10,8 +10,9 @@ import Portfolio from "./pages/Portfolio";
 import ProfessionalSummary from "./pages/ProfessionalSummary";
 import ProfessionalExperience from "./pages/ProfessionalExperience";
 // import ContactForm from "./components/Contact/index.js";
-import ContactPages from "./pages/Contact.js";
+// import ContactPage from "./pages/Contact.js";
 import logo from "./assets/logo/PADSlogo.png";
+import Contact from "./pages/Contact"
 import "./App.css";
 // import { Navbar } from 'react-bootstrap';
 

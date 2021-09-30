@@ -1,5 +1,10 @@
 // import react from "react";
 import Hero from"../components/Hero";
+function Portfolio(){
+  return(
+<p>Hello</p>
+  );
+}
 // function ControlledCarousel() {
 //   const [index, setIndex] = useState(0);
 

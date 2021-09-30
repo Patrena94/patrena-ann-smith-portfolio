@@ -37,7 +37,7 @@
 
  
 # Installation
- The user will need install React.  The user's may install react by utilizing npx create-react-app portofolio <app name>. For the purpose of this project npm install -g create-react-app followed by npx create-react-app portfolio-patrena-smith.  The user will need to typ npm start or nodemon to initiate the program directly in the browser at port 3000.
+ The user will need install React.  The user's may install react by utilizing npx create-react-app portofolio <app name>. For the purpose of this project npm install -g create-react-app followed by npx create-react-app portfolio-patrena-smith.  The following program will need to be installed as npm install react-bootstrap@1.5.2; npm install react-bootstrap@next bootstrap@5.1.1; The user will need to typ npm start or nodemon to initiate the program directly in the browser at port 3000.
 
 # Usage
  
