@@ -1,5 +1,5 @@
 // import react from "react";
-import Hero from"../components/Hero/index.js";
+import Hero from"../components/Hero";
 // function ControlledCarousel() {
 //   const [index, setIndex] = useState(0);
 
