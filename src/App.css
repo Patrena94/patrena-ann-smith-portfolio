@@ -37,6 +37,9 @@
   }
 }
 body {
-  background-color: black;
+  /* background-color: black; */
   color:gold
+}
+.h2 {
+  color:gold;
 }

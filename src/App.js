@@ -11,9 +11,10 @@ import ProfessionalSummary from "./pages/ProfessionalSummary";
 import ProfessionalExperience from "./pages/ProfessionalExperience";
 // import ContactForm from "./components/Contact/index.js";
 // import ContactPage from "./pages/Contact.js";
-import logo from "./assets/logo/PADSlogo.png";
+import logo from "./assets/logo/PADSlogo(white).png";
 import Contact from "./pages/Contact"
 import "./App.css";
+
 // import { Navbar } from 'react-bootstrap';
 
 class App extends React.Component {
@@ -48,12 +49,12 @@ class App extends React.Component {
       <Router>
         <Container className="p=0" fluid={true}>
           {/* <Navbar className="border-bottom" bg="transparent" expand="lg"> */}
-          <Navbar className="border-bottom" bg="dark" Variant="dark" expand="lg">
+          <Navbar className="border-bottom"expand="lg">
             <Navbar.Brand href="#home">
               <img
                 src={logo}
-                width="30"
-                height="30"
+                width="100"
+                height="100"
                 className="d-inline-block align-top"
                 alt="logo"
               />
@@ -108,6 +109,7 @@ class App extends React.Component {
             exact
             render={() => <Contact title={this.state.contact.title} />}
           />
+         
           <Footer></Footer>
         </Container>
       </Router>
