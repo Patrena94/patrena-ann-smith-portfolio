@@ -5,9 +5,31 @@ import React, {useState} from 'react';
 // import ReactDom from 'react-dom'
 // import ReactCardFlip from "react-card-flip";
 import ReactCardFlip from"../components/CardFlip";
+import CardFlip from "../components/CardFlip";
+
+
 
 
 function ProfessionalExperience(props) {
+  const Cards =["Engineering", "Engineering"];
+  // const CardFlip =[
+//   {
+//     id: 0,
+//     description:"EDUCATION & TRAINING",
+//     src: "pr",
+//     text:"PROCURE STAFF	2006 TO 2009",
+//     alt:"Healthcare Insurance Industry",
+//     primaryResponsibility:"Interfaced with engaging managers and vendors to fill administrative and clerical contractor job requisitions within the healthcare industry nationwide.Developed and educated clients  on the process and benefit of the program.Screened resumes to select the most qualified candidates to present to the staffing managers.Secured interviews and complied payroll cost savings reports; expired purchase order and tenure reports; and  processed purchase orders modification such as extensions, expenses, and termination.Diplomatically negotiated bill rates with vendors to win five monthly negotiation awards.", 
+//   }
+//   {
+//     id: 1,
+//     description:"On-site Relationship Manager",
+//     src: "pr",
+//     text:"PROCURE STAFF	2006 TO 2009",
+//     alt:"Healthcare Insurance Industry",
+//     primaryResponsibility:"Interfaced with engaging managers and vendors to fill administrative and clerical contractor job requisitions within the healthcare industry nationwide.Developed and educated clients  on the process and benefit of the program.Screened resumes to select the most qualified candidates to present to the staffing managers.Secured interviews and complied payroll cost savings reports; expired purchase order and tenure reports; and  processed purchase orders modification such as extensions, expenses, and termination.Diplomatically negotiated bill rates with vendors to win five monthly negotiation awards.", 
+//   }
+// ]
   return (
     <div>
       <Hero title={props.title} />
@@ -23,7 +45,12 @@ function ProfessionalExperience(props) {
           who can teach others to exceed expectations consistently.{" "}
         </p> 
       </Content>  
-      <ReactCardFlip></ReactCardFlip> 
+  {Cards.map((card)=>( 
+    <CardFlip card={card} />
+    // <img
+    // src={require(``)}
+  ))}    
+      <ReactCardFlip />
     </div>
 
     //     <><article class="secondary-content">
@@ -148,5 +175,24 @@ function ProfessionalExperience(props) {
     // );
     // }
   );
-}
+// }
+// const CardFlip =[
+//   {
+//     id: 0,
+//     description:"EDUCATION & TRAINING",
+//     src: "pr",
+//     text:"PROCURE STAFF	2006 TO 2009",
+//     alt:"Healthcare Insurance Industry",
+//     primaryResponsibility:"Interfaced with engaging managers and vendors to fill administrative and clerical contractor job requisitions within the healthcare industry nationwide.Developed and educated clients  on the process and benefit of the program.Screened resumes to select the most qualified candidates to present to the staffing managers.Secured interviews and complied payroll cost savings reports; expired purchase order and tenure reports; and  processed purchase orders modification such as extensions, expenses, and termination.Diplomatically negotiated bill rates with vendors to win five monthly negotiation awards.", 
+//   }
+//   {
+//     id: 1,
+//     description:"On-site Relationship Manager",
+//     src: "pr",
+//     text:"PROCURE STAFF	2006 TO 2009",
+//     alt:"Healthcare Insurance Industry",
+//     primaryResponsibility:"Interfaced with engaging managers and vendors to fill administrative and clerical contractor job requisitions within the healthcare industry nationwide.Developed and educated clients  on the process and benefit of the program.Screened resumes to select the most qualified candidates to present to the staffing managers.Secured interviews and complied payroll cost savings reports; expired purchase order and tenure reports; and  processed purchase orders modification such as extensions, expenses, and termination.Diplomatically negotiated bill rates with vendors to win five monthly negotiation awards.", 
+//   }
+// ]
+  }
 export default ProfessionalExperience;

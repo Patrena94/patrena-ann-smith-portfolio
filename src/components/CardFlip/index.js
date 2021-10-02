@@ -2,7 +2,31 @@
 // import Sound from "react-sound";
 import ReactCardFlip from "react-card-flip";
 import React, { useState } from "react";
-import pr from "./../../assets/career/pr.jpg";
+import pr from "../../assets/career/pr.jpg";
+import Resume from "./../../assets/career/Resume.jpg";
+// import Resume from ".Resume"
+
+// const frontStyles ={
+//     backgroundColor: "black",
+//     height: 400,
+//     width: 400,
+//     color: "goldenrod",
+//     display: "flex",
+//     justifyContent: "center",
+//     alignItems: "center",
+//   };
+//  const backStyles={
+//    ...frontStyles,
+//     backgroundColor: "goldenrod",
+//     color: "black",
+//  }; 
+//  const frontH3Styles={
+//     color: "goldenrod",
+//     display: "flex",
+//     justifyContent: "center",
+//     textAlign: "center",
+//     text: "font-weight-italic",
+//  }
 
 const CardFlip = () => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -20,9 +44,11 @@ const CardFlip = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          marginBottom:25,
+          hoverShadow: "strong",
         }}
       >
-          <ul className="location-front-item">
+          <div className="location-front-item">
         <h3
           className="justify-content-center"
           style={{
@@ -33,20 +59,20 @@ const CardFlip = () => {
             text: "font-weight-italic",
           }}
         >
-          On-site Relationship Manager
+          Professional Experience
         </h3>
         <img
           className="location-front-image justify-content-center py-5"
           src={pr}
           width="275"
           height="275"
-          text="On-site Relationship Manager"
+          text="Professional Experience"
           alt="healthcare Recruiter"
         />
         <button className="front-flip-button" onClick={handleClick}>
           Click to Learn More
         </button>
-        </ul> 
+        </div> 
       </div>
       <div
         style={{
@@ -57,9 +83,10 @@ const CardFlip = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          marginBottom: 25,
         }}
       >
-        <ul className="location-back-item">
+        <div className="location-back-item">
           {/* <Sound url={music} 
          playStatus={isFlipped ? Sound.status.PLAYING : Sound.status.STOPPED}/>   */}
 
@@ -70,23 +97,24 @@ const CardFlip = () => {
               display: "flex",
               justifyContent: "center",
               textAlign: "center",
-              text: "font-weight-italix",
+              text: "font-weight-italic",
             }}
           >
-            On-site Relationship Manager
+            Resume
           </h3>
+          <a href="./Resume/index.js">
           <img
             className="location-back-image justify-content-center py-5"
             src={pr}
             width="275"
             height="275"
-            text="On-site Relationship Manager"
+            text="Resume"
             alt="healthcare Recruiter"
-          />
+          /></a>
           <button className="back-flip-button" onClick={handleClick}>
             click to View
           </button>
-        </ul>
+        </div>
       </div>
       
     </ReactCardFlip>

@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Footer from "./components/Footer/index.js";
-import Portfolio from "./pages/Portfolio";
+// import Resume from "./pages/Resume";
 import ProfessionalSummary from "./pages/ProfessionalSummary";
 import ProfessionalExperience from "./pages/ProfessionalExperience";
 import logo from "./assets/logo/PADSlogo(white).png";
@@ -63,9 +63,9 @@ class App extends React.Component {
                 <Link className="nav-link" to="/">
                   Professional Summary
                 </Link>
-                <Link className="nav-link" to="/professionalSummary">
-                  Portfolio
-                </Link>
+                {/* <Link className="nav-link" to="/resume">
+                  Resume 
+                </Link> */}
                 <Link className="nav-link" to="/professionalExperience">
                   Professional Experience
                 </Link>
@@ -87,11 +87,11 @@ class App extends React.Component {
               />
             )}
           />
-          <Route
-            path="/portfolio"
+           {/* <Route
+            path="/resume"
             exact
-            render={() => <Portfolio title={this.state.portfolio.title} />}
-          />
+            render={() => <resume title={this.state.resume.title} />} */}
+          {/* />  */}
           <Route
             path="/professionalExperience"
             exact
