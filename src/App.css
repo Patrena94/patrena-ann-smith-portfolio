@@ -36,10 +36,32 @@
     transform: rotate(360deg);
   }
 }
-body {
+body{
   /* background-color: black; */
   color:gold
 }
 .h2 {
   color:gold;
+}
+body .bg-dark{
+  background-color: #000000! important;
+  margin-bottom: 100px ;
+  box-shadow: 100px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.jumbotron {
+  background-image:"../../../assets/hero/hero-imgage.jpg";
+  background-repeat:no-repeat, no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 50px;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 100px;
+  border: radius 75px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.jumbotron h1, p{
+  /* background-color: goldenrod; */
+  padding:50px;
 }

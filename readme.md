@@ -67,10 +67,24 @@ User interested in contributing to the project will need to create their own bra
 
 Cover Image: Photo by <a href="https://unsplash.com/@molnj?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jocelyn Morales</a> on <a href="https://unsplash.com/t/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-Portfolio Individual Image photo by Photo by <a href="https://unsplash.com/@trinwin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Trinity Nguyen</a> on <a href="https://unsplash.com/t/business-work?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Portfolio Individual Image by Photo by <a href="https://unsplash.com/@trinwin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Trinity Nguyen</a> on <a href="https://unsplash.com/t/business-work?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-Team Building photo by Photo by <a href="https://unsplash.com/@mapbox?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mapbox</a> on <a href="https://unsplash.com/s/photos/teamwork?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Team Building photo Photo by <a href="https://unsplash.com/@mapbox?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mapbox</a> on <a href="https://unsplash.com/s/photos/teamwork?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+Public Relations career Photo by <a href="https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christina @ wocintechchat.com</a> on <a href="https://unsplash.com/s/photos/insurance?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
+Recruitment career Photo by <a href="https://unsplash.com/@agk42?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alex Knight</a> on <a href="https://unsplash.com/s/photos/healthcare?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+Banking career Photo by <a href="https://unsplash.com/@b0rno?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ryan Born</a> on <a href="https://unsplash.com/s/photos/bank?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   
+Engineering career Photo by <a href="https://unsplash.com/@sayyam197?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Umer Sayyam</a> on <a href="https://unsplash.com/s/photos/bridges?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+ Aerospace career Photo by <a href="https://unsplash.com/@spacex?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">SpaceX</a> on <a href="https://unsplash.com/s/photos/aerospace?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+Co-op Career
+
+
+Volunteer career
   
   
 

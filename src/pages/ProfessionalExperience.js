@@ -1,6 +1,11 @@
 import react from "react";
 import Hero from "../components/Hero/index.js";
 import Content from "../components/Content";
+import React, {useState} from 'react';
+// import ReactDom from 'react-dom'
+// import ReactCardFlip from "react-card-flip";
+import ReactCardFlip from"../components/CardFlip";
+
 
 function ProfessionalExperience(props) {
   return (
@@ -16,9 +21,11 @@ function ProfessionalExperience(props) {
           serving company objectives. Metrics generator who can institute new
           standards of excellence through measurable accolades. Talented coach
           who can teach others to exceed expectations consistently.{" "}
-        </p>
-      </Content>
+        </p> 
+      </Content>  
+      <ReactCardFlip></ReactCardFlip> 
     </div>
+
     //     <><article class="secondary-content">
     //         <section>
     //             <h2 class="section-title primary-border">AREAS OF EXPERTISE</h2>

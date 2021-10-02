@@ -4,11 +4,6 @@ import noteTaker from './../../assets/carousel/noteTaker.png';
 import observer from './../../assets/carousel/observer.png';
 import stack_underflo from './../../assets/carousel/stack_underflo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import {Carousel} from "react-bootstrap"
-// import useState from 'react';
-// import render from 'react';
-// import React from "react";
-
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -18,7 +13,7 @@ class BootstrapCarouselComponent extends React.Component {
     render() {
         return (
             <div>
-                <div className='container-fluid' >
+                <div className='container-fluid p-0'>
                     <div className="row">
                         <div className="col-sm-12">
                             <h3>Ventures in Web Development</h3>
@@ -26,7 +21,7 @@ class BootstrapCarouselComponent extends React.Component {
                     </div>
                     <div className="row">
                         <div className="col-12">
-                            <Carousel>
+                            <Carousel className="justify-content-center py5">
 
                                 <Carousel.Item>
                                     <img
@@ -70,6 +65,21 @@ class BootstrapCarouselComponent extends React.Component {
                                     />
                                     <Carousel.Caption>
                                         <h3>Note Taker Express</h3>
+                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                    </Carousel.Caption>
+                                </Carousel.Item>
+
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block w-800"
+                                        src={stack_underflo}
+                                        width="800"
+                                        height="400"
+                                        text = "Stack_Underflo"
+                                        alt="Stack_Underflo"
+                                    />
+                                    <Carousel.Caption>
+                                        <h3>Stack_Underflo</h3>
                                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                                     </Carousel.Caption>
                                 </Carousel.Item>
