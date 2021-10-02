@@ -29,3 +29,7 @@ body {
 .err-msg {color:red;
   padding: 20px 15px;
 }
+/* div .react-card-flipper{
+  border-radius: 20px;
+  box-shadow: 1px 1px .5px 0px rgba(0,0,0,0.75);
+} */

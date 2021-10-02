@@ -48,6 +48,10 @@ body .bg-dark{
   margin-bottom: 100px ;
   box-shadow: 100px 10px 5px 0px rgba(0,0,0,0.75);
 }
+ /* div {
+  border-radius: 20px;
+  box-shadow: 100px 10px 5px 0px rgba(0,0,0,0.75);
+}  */
 .jumbotron {
   background-image:"../../../assets/hero/hero-imgage.jpg";
   background-repeat:no-repeat, no-repeat;

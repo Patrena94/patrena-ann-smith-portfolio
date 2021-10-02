@@ -17,7 +17,7 @@ function Hero(props) {
               <h3 className="display-4 font-weight-light">{props.subTitle}</h3>
             )}
             {props.subscript && (
-              <h4 className="text font-weightplight">{props.subscript}</h4>
+              <h4 className="text font-weight-light">{props.subscript}</h4>
             )}
           </Col>
         </Row>
