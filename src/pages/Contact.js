@@ -30,9 +30,9 @@ class ContactPage extends React.Component {
   handleSubmit =(event) =>{
       event.preventDefault();
       this.setState({
-        //   disabled: true,
+          disabledHostCheck: true,
       });
-      axios.post('http://localhost:3006/api/email', this.state)
+      axios.post('/api/email', this.state)
       .then(res =>{
           if(res.data.success){
               this.setState({

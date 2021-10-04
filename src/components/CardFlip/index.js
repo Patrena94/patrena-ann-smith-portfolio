@@ -3,7 +3,11 @@
 import ReactCardFlip from "react-card-flip";
 import React, { useState } from "react";
 import pr from "../../assets/career/pr.jpg";
-import Resume from "./../../assets/career/Resume.jpg";
+import Resume from "../../assets/career/Resume.jpg";
+import volunteerism from "../../assets/career/volunteerism.jpg";
+import HR from "../../assets/career/HR.jpg";
+import E from "../../assets/career/E.jpg";
+import AHR from "../../assets/career/AHR.jpg";
 // import Resume from ".Resume"
 
 // const frontStyles ={
@@ -28,9 +32,10 @@ import Resume from "./../../assets/career/Resume.jpg";
 //     text: "font-weight-italic",
 //  }
 
-const CardFlip = () => {
+const CardFlip = (props) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const handleClick = () => {
+    console.log(props)
     setIsFlipped(!isFlipped);
   };
   return (
@@ -49,6 +54,7 @@ const CardFlip = () => {
         }}
       >
           <div className="location-front-item">
+            {/* Back of Card information starts here! */}
         <h3
           className="justify-content-center"
           style={{
@@ -57,16 +63,19 @@ const CardFlip = () => {
             justifyContent: "center",
             textAlign: "center",
             text: "font-weight-italic",
+            // fontSize: "8px",
           }}
         >
-          Professional Experience
+       {props.description}
         </h3>
+        {/* <p> {props.text}</p> */}
+        {/* <p> {props.primaryResponsibility}</p> */}
         <img
           className="location-front-image justify-content-center py-5"
-          src={pr}
+          src={E}
           width="275"
           height="275"
-          text="Professional Experience"
+          // text={props.text}
           alt="healthcare Recruiter"
         />
         <button className="front-flip-button" onClick={handleClick}>
@@ -77,8 +86,8 @@ const CardFlip = () => {
       <div
         style={{
           backgroundColor: "goldenrod",
-          height: 400,
-          width: 400,
+          height: 800,
+          width: 800,
           color: "black",
           display: "flex",
           justifyContent: "center",
@@ -86,6 +95,7 @@ const CardFlip = () => {
           marginBottom: 25,
         }}
       >
+        {/* detail on back of card */}
         <div className="location-back-item">
           {/* <Sound url={music} 
          playStatus={isFlipped ? Sound.status.PLAYING : Sound.status.STOPPED}/>   */}
@@ -98,11 +108,23 @@ const CardFlip = () => {
               justifyContent: "center",
               textAlign: "center",
               text: "font-weight-italic",
+              fontSize: "10px",
             }}
           >
-            Resume
+            {props.title}
           </h3>
-          <a href="./Resume/index.js">
+          {/* <h5 className="justify-content-center"
+          style={{
+            color: "red",
+            display:"flex",
+            justifyContent:"center",
+            text: "font-weight-light",
+          }}
+          > */}
+          {/* {props.title}</h5> */}
+          <h4 className="font-weight-light gold-text">{props.text}</h4>
+         <p className="font-weight-light white-text">{props.description}</p>
+          {/* <a href="./Resume/index.js">
           <img
             className="location-back-image justify-content-center py-5"
             src={pr}
@@ -110,9 +132,9 @@ const CardFlip = () => {
             height="275"
             text="Resume"
             alt="healthcare Recruiter"
-          /></a>
+          /></a> */}
           <button className="back-flip-button" onClick={handleClick}>
-            click to View
+            Return
           </button>
         </div>
       </div>
@@ -121,29 +143,4 @@ const CardFlip = () => {
   );
 };
 
-// class App extends React.Component {
-//     constructor() {
-//       super();
-//         this.state = {
-//         isFlipped: false
-//       };
-//       this.handleClick = this.handleClick.bind(this);
-//     }
-
-//     handleClick(e) {
-//       e.preventDefault();
-//       this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
-//     }
-
-//     render() {
-//       return (
-//         <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
-//           <YOUR_FRONT_CCOMPONENT>
-//             This is the front of the card.
-//             <button onClick={this.handleClick}>Click to flip</button>
-//           </YOUR_FRONT_CCOMPONENT>
-//           </ReactCardFlip>
-//       )
-//     }
-//   }
 export default CardFlip;

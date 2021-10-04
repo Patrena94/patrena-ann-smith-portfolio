@@ -13,22 +13,22 @@ class BootstrapCarouselComponent extends React.Component {
     render() {
         return (
             <div>
-                <div className='container-fluid p-0'>
+                <div className='container-fluid mx-auto'>
                     <div className="row">
                         <div className="col-sm-12">
-                            <h3>Ventures in Web Development</h3>
+                            <h1 className="justify-content-center py-5">Ventures in Web Development</h1>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-12">
                             <Carousel className="justify-content-center py5">
 
-                                <Carousel.Item>
+                                <Carousel.Item Interval={400}>
                                     <img
-                                        className="d-block w-800"
+                                        className="d-block w-100"
                                         src={budget}
                                         width="800"
-                                        height="400"
+                                        height="800"
                                         text="P3S Corp budget Tracker"
                                         alt="Budget Tracker"
                                     />
@@ -38,12 +38,12 @@ class BootstrapCarouselComponent extends React.Component {
                                     </Carousel.Caption>
                                 </Carousel.Item>
 
-                                <Carousel.Item>
+                                <Carousel.Item Interval={4000}>
                                     <img
-                                        className="d-block w-800"
+                                        className="d-block w-100"
                                         src={observer}
                                         width="800"
-                                        height ="400"
+                                        height ="800"
                                         text="The Casual Observer"
                                         alt="Tech Blog"
                                     />
@@ -54,12 +54,12 @@ class BootstrapCarouselComponent extends React.Component {
                                     </Carousel.Caption>
                                 </Carousel.Item>
 
-                                <Carousel.Item>
+                                <Carousel.Item Interval={4000}>
                                     <img
-                                        className="d-block w-800"
+                                        className="d-block w-100"
                                         src={noteTaker}
                                         width="800"
-                                        height="400"
+                                        height="800"
                                         text = "Note Taker Express"
                                         alt="Note Taker Express"
                                     />
@@ -69,12 +69,12 @@ class BootstrapCarouselComponent extends React.Component {
                                     </Carousel.Caption>
                                 </Carousel.Item>
 
-                                <Carousel.Item>
+                                <Carousel.Item Interval ={4000}>
                                     <img
-                                        className="d-block w-800"
+                                        className="d-block w-100"
                                         src={stack_underflo}
                                         width="800"
-                                        height="400"
+                                        height="800"
                                         text = "Stack_Underflo"
                                         alt="Stack_Underflo"
                                     />
