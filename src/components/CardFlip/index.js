@@ -32,10 +32,10 @@ import AHR from "../../assets/career/AHR.jpg";
 //     text: "font-weight-italic",
 //  }
 
-const CardFlip = (props) => {
+const CardFlip = ({cards}) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const handleClick = () => {
-    console.log(props)
+    console.log(cards)
     setIsFlipped(!isFlipped);
   };
   return (
@@ -53,7 +53,7 @@ const CardFlip = (props) => {
           hoverShadow: "strong",
         }}
       >
-          <div className="location-front-item">
+          <div className="card-body">
             {/* Back of Card information starts here! */}
         <h3
           className="justify-content-center"
@@ -66,10 +66,8 @@ const CardFlip = (props) => {
             // fontSize: "8px",
           }}
         >
-       {props.description}
+       {cards.title}
         </h3>
-        {/* <p> {props.text}</p> */}
-        {/* <p> {props.primaryResponsibility}</p> */}
         <img
           className="location-front-image justify-content-center py-5"
           src={E}
@@ -83,6 +81,10 @@ const CardFlip = (props) => {
         </button>
         </div> 
       </div>
+
+
+
+      
       <div
         style={{
           backgroundColor: "goldenrod",
@@ -96,7 +98,7 @@ const CardFlip = (props) => {
         }}
       >
         {/* detail on back of card */}
-        <div className="location-back-item">
+        <div className="card-body">
           {/* <Sound url={music} 
          playStatus={isFlipped ? Sound.status.PLAYING : Sound.status.STOPPED}/>   */}
 
@@ -108,10 +110,10 @@ const CardFlip = (props) => {
               justifyContent: "center",
               textAlign: "center",
               text: "font-weight-italic",
-              fontSize: "10px",
+              fontSize: "24px",
             }}
           >
-            {props.title}
+            {cards.subtitle}
           </h3>
           {/* <h5 className="justify-content-center"
           style={{
@@ -122,8 +124,26 @@ const CardFlip = (props) => {
           }}
           > */}
           {/* {props.title}</h5> */}
-          <h4 className="font-weight-light gold-text">{props.text}</h4>
-         <p className="font-weight-light white-text">{props.description}</p>
+          <h4 
+            className="justify-content-center"
+            style={{
+              color: "black",
+              display: "flex",
+              justifyContent: "center",
+              textAlign: "center",
+              text: "font-weight-italic",
+              fontSize: "16px",
+            }}className="font-weight-light">{cards.text}</h4>
+         <p 
+           className="justify-content-center"
+           style={{
+             color: "#914875",
+             display: "flex",
+             justifyContent: "left",
+             textAlign: "left",
+             text: "font-weight-italic",
+             fontSize: "16px",
+           }}className="font-weight-light white-text">{cards.description}</p>
           {/* <a href="./Resume/index.js">
           <img
             className="location-back-image justify-content-center py-5"

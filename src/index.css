@@ -47,3 +47,7 @@ div.c-wrapper{
 width: 100%; /* use this, or not */
 margin: auto;
 }
+.card-body{
+  margin: 20px;
+  box-shadow: 0px opx 3px 1px rgba(0,0,0,0.75);
+}

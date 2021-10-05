@@ -21,42 +21,65 @@ function ProfessionalExperience(props) {
   {
     id: 0,
     title:"EDUCATION & TRAINING",
+    subtitle: "University of Connecticut",
     src: "E",
-    text:"PROCURE STAFF	2006 TO 2009",
-    alt:"Healthcare Insurance Industry",
-    description:"Interfaced with engaging managers and vendors to fill administrative and clerical contractor job requisitions within the healthcare industry nationwide.Developed and educated clients  on the process and benefit of the program.Screened resumes to select the most qualified candidates to present to the staffing managers.Secured interviews and complied payroll cost savings reports; expired purchase order and tenure reports; and  processed purchase orders modification such as extensions, expenses, and termination.Diplomatically negotiated bill rates with vendors to win five monthly negotiation awards.", 
+    text:"Bachelor of Arts in Liberal Arts & Sciences: Political Science",
+    alt:"Education",
+    description:"University of Connecticut School of Engineering: Certificate Program: Full Stack Web Developer", 
   },
   {
     id: 1,
-    description:"AREAS OF EXPERTISE",
+    title:"AREAS OF EXPERTISE",
+    subtitle: "Areas of Expertise",
     src: "HR",
-    text:"PROCURE STAFF	2006 TO 2009",
-    alt:"Healthcare Insurance Industry",
-    input:"Interfaced with engaging managers and vendors to fill administrative and clerical contractor job requisitions within the healthcare industry nationwide.Developed and educated clients  on the process and benefit of the program.Screened resumes to select the most qualified candidates to present to the staffing managers.Secured interviews and complied payroll cost savings reports; expired purchase order and tenure reports; and  processed purchase orders modification such as extensions, expenses, and termination.Diplomatically negotiated bill rates with vendors to win five monthly negotiation awards." 
+    text:"Web Development: HTML, CSS, JavaScript, Express.js, SQL, NoSQL, React, Node.js, API:client Side, Server-Side, Third-Party, Rest and Web",
+    alt:"Areas of Expertise",
+    description:"Customer Service – Lead Generation – Client Relations – Event Coordination – Strategic Planning Professional Development – Talent Acquisition – Market Analysis – Interviewing – Business Negotiations MS Office – Word Perfect – Lotus Notes – GroupWise – Adapt – iResumix – Copas – CSS HRizon ADP/CSS – AJB.org – Monster – Careerbuilder – PcAnywhere – Temp Trax – JobDirect – HotJobs – QuickBooks – Zoom- Go to Meeting", 
   },
   {
     id: 2,
-    description:"RESUME",
-    src: "Resume",
-    text:"PROCURE STAFF	2006 TO 2009",
+    title:"AWARDS & RECOGNITIONS",
+    subtitle:"Awards & Recognitions",
+    src: "AHR",
+    text:"2017 Naugatuck Valley Projects MICAH Award Honoree ~ The Naugatuck Valley Project",
     alt:"Healthcare Insurance Industry",
-    input:"Interfaced with engaging managers and vendors to fill administrative and clerical contractor job requisitions within the healthcare industry nationwide.Developed and educated clients  on the process and benefit of the program.Screened resumes to select the most qualified candidates to present to the staffing managers.Secured interviews and complied payroll cost savings reports; expired purchase order and tenure reports; and  processed purchase orders modification such as extensions, expenses, and termination.Diplomatically negotiated bill rates with vendors to win five monthly negotiation awards." 
+   description:"Certificate of Special Congressional Recognition of the 2017 Naugatuck Valley Project’s MICAH AWARD ~ U.S. House of Representatives Congresswoman Elizabeth H. Esty." 
   },
   {
     id: 3,
-    description:"COVER LETTER",
+    title:"RESUME",
+    subtitle:"",
+    src: "Resume",
+    text:"PROCURE STAFF	2006 TO 2009",
+    alt:"Healthcare Insurance Industry",
+    description:"Interfaced with engaging managers and vendors to fill administrative and clerical contractor job requisitions within the healthcare industry nationwide.Developed and educated clients  on the process and benefit of the program.Screened resumes to select the most qualified candidates to present to the staffing managers.Secured interviews and complied payroll cost savings reports; expired purchase order and tenure reports; and  processed purchase orders modification such as extensions, expenses, and termination.Diplomatically negotiated bill rates with vendors to win five monthly negotiation awards." 
+  },
+  {
+    id: 4,
+    title:"COVER LETTER",
+    subtitle:"",
     src: "AHR",
     text:"PROCURE STAFF	2006 TO 2009",
     alt:"Healthcare Insurance Industry",
-    primaryResponsibility:"Interfaced with engaging managers and vendors to fill administrative and clerical contractor job requisitions within the healthcare industry nationwide.Developed and educated clients  on the process and benefit of the program.Screened resumes to select the most qualified candidates to present to the staffing managers.Secured interviews and complied payroll cost savings reports; expired purchase order and tenure reports; and  processed purchase orders modification such as extensions, expenses, and termination.Diplomatically negotiated bill rates with vendors to win five monthly negotiation awards." 
+   description:"Interfaced with engaging managers and vendors to fill administrative and clerical contractor job requisitions within the healthcare industry nationwide.Developed and educated clients  on the process and benefit of the program.Screened resumes to select the most qualified candidates to present to the staffing managers.Secured interviews and complied payroll cost savings reports; expired purchase order and tenure reports; and  processed purchase orders modification such as extensions, expenses, and termination.Diplomatically negotiated bill rates with vendors to win five monthly negotiation awards." 
   },  
   {
     id: 4,
-    description:"VOLUNTEERISM",
+    title:"VOLUNTEERISM",
+    subtitle:"WESTERN CONNECTICUT AREA LABOR FEDERATION	2016 TO 2019",
     src: "volunteerism",
-    text:"PROCURE STAFF	2006 TO 2009",
+    text:"FINANCIAL SECRETARY TREASURER",
     alt:"Healthcare Insurance Industry",
-    primaryResponsibility:"Interfaced with engaging managers and vendors to fill administrative and clerical contractor job requisitions within the healthcare industry nationwide.Developed and educated clients  on the process and benefit of the program.Screened resumes to select the most qualified candidates to present to the staffing managers.Secured interviews and complied payroll cost savings reports; expired purchase order and tenure reports; and  processed purchase orders modification such as extensions, expenses, and termination.Diplomatically negotiated bill rates with vendors to win five monthly negotiation awards." 
+    description:"Oversaw the merger of four central labor council to create the Western Connecticut Area Labor Federation.  Developed the constitution and merger contract for area labor federation; secured a FEIN and State tax ID for the organization; created  an employee contract; secured employee health and retirement benefit; and recruitment and hiring of employee.  My primary responsibility was to provide detailed Financial reports; account payables and receivables, payroll; as well as State Elections Enforcement Commission and 990 fillings. In addition to,  increasing and maintaining member affiliation; managing the political Action Committee account; managing the field engagement coordinator; strategic planning and program building; as well as developing relationship at the National, Regional, and State level across private, public and building trade union sectors. •	Managed the merger of over $300,000 in Assets.•	Secured $270,000 in grant funding from the National AFL CIO for Western Connecticut Area Labor Federation and Eastern Connecticut Area Labor Federation. •	Sponsored Pathway to Power – a seminar to encourage and train union members to run for federal, state, and municipal office.•	Acquired access to a National Field Engagement Coordinator to assist with municipal elections.•	Acquired additional funding from the National AFL~CIO for supplies for the municipal elections.", 
+  }, 
+  {
+    id: 5,
+    title:"BOARDS",
+    subtitle:"Organizations	2010 TO 2021",
+    src: "volunteerism",
+    text:"Board Positions",
+    alt:"Healthcare Insurance Industry",
+    description:"Waterbury Central Labor Council: Treasurer-PAC Fund Administrator  Fairfield County Central Labor Council: Recording Secretary      Hartford Central Labor Council: Vice President    Connecticut AFL-CIO: Vice President  Western Connecticut Area Labor Federation: Recording Secretary Treasurer  Eastern Connecticut Area Labor Federation:  Executive Board Member -Trustee", 
   }  
 ]
   return (
@@ -75,7 +98,7 @@ function ProfessionalExperience(props) {
         </p> 
       </Content>  
   {Cards.map((card)=>( 
-    <CardFlip title={card.description} text={card.text} />
+    <CardFlip  cards={card} />
     // <img
     // src={require(``)}
   ))}    

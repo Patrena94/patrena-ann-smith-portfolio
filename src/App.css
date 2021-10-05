@@ -80,3 +80,14 @@ div.c-wrapper{
 width: 100%; /* use this, or not */
 margin: auto;
 }
+.container-fluid{
+  position: relative;
+  text-align: center;
+  color:goldenrod;
+  /* margin: 5px; */
+}
+div .img-overlay{
+  position:absolute;
+  top: 8px;
+  right: 16px;
+}
