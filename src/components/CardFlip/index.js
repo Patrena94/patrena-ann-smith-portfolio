@@ -1,5 +1,3 @@
-// import React from "react";
-// import Sound from "react-sound";
 import ReactCardFlip from "react-card-flip";
 import React, { useState } from "react";
 import pr from "../../assets/career/pr.jpg";
@@ -8,7 +6,11 @@ import volunteerism from "../../assets/career/volunteerism.jpg";
 import HR from "../../assets/career/HR.jpg";
 import E from "../../assets/career/E.jpg";
 import AHR from "../../assets/career/AHR.jpg";
-// import Resume from ".Resume"
+import CardGroup from "react-bootstrap/CardGroup";
+// import Container from "react-bootstrap/Container";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
+
 
 // const frontStyles ={
 //     backgroundColor: "black",
@@ -40,6 +42,10 @@ const CardFlip = ({cards}) => {
   };
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+    {/* <CardGroup> */}
+  {/* <Container>
+    <Row>
+      <Col> */}
       <div
         style={{
           backgroundColor: "black",
@@ -54,7 +60,6 @@ const CardFlip = ({cards}) => {
         }}
       >
           <div className="card-body">
-            {/* Back of Card information starts here! */}
         <h3
           className="justify-content-center"
           style={{
@@ -63,7 +68,6 @@ const CardFlip = ({cards}) => {
             justifyContent: "center",
             textAlign: "center",
             text: "font-weight-italic",
-            // fontSize: "8px",
           }}
         >
        {cards.title}
@@ -73,11 +77,10 @@ const CardFlip = ({cards}) => {
           src={E}
           width="275"
           height="275"
-          // text={props.text}
           alt="healthcare Recruiter"
         />
         <button className="front-flip-button" onClick={handleClick}>
-          Click to Learn More
+          Learn More
         </button>
         </div> 
       </div>
@@ -97,7 +100,7 @@ const CardFlip = ({cards}) => {
           marginBottom: 25,
         }}
       >
-        {/* detail on back of card */}
+        {/* Back of Card information starts here! */}
         <div className="card-body">
           {/* <Sound url={music} 
          playStatus={isFlipped ? Sound.status.PLAYING : Sound.status.STOPPED}/>   */}
@@ -115,15 +118,6 @@ const CardFlip = ({cards}) => {
           >
             {cards.subtitle}
           </h3>
-          {/* <h5 className="justify-content-center"
-          style={{
-            color: "red",
-            display:"flex",
-            justifyContent:"center",
-            text: "font-weight-light",
-          }}
-          > */}
-          {/* {props.title}</h5> */}
           <h4 
             className="justify-content-center"
             style={{
@@ -144,21 +138,15 @@ const CardFlip = ({cards}) => {
              text: "font-weight-italic",
              fontSize: "16px",
            }}className="font-weight-light white-text">{cards.description}</p>
-          {/* <a href="./Resume/index.js">
-          <img
-            className="location-back-image justify-content-center py-5"
-            src={pr}
-            width="275"
-            height="275"
-            text="Resume"
-            alt="healthcare Recruiter"
-          /></a> */}
           <button className="back-flip-button" onClick={handleClick}>
             Return
           </button>
         </div>
       </div>
-      
+      {/* </Col>
+    </Row>
+    </Container> */}
+    {/* </CardGroup>   */}
     </ReactCardFlip>
   );
 };
