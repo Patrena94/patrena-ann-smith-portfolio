@@ -10,6 +10,7 @@ import CardGroup from "react-bootstrap/CardGroup";
 // import Container from "react-bootstrap/Container";
 // import Row from "react-bootstrap/Row";
 // import Col from "react-bootstrap/Col";
+// import Grid from "react-bootstrap/Grid";
 
 
 // const frontStyles ={
@@ -41,11 +42,13 @@ const CardFlip = ({cards}) => {
     setIsFlipped(!isFlipped);
   };
   return (
+    <CardGroup>
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
-    {/* <CardGroup> */}
-  {/* <Container>
-    <Row>
-      <Col> */}
+    {/* <CardGroup> 
+  <Container> */}
+   {/* <Row md={1} lg={2} className="g-4">
+     {Array.from({length:4}).map((_,idx)=>(
+      <Col>  */}
       <div
         style={{
           backgroundColor: "black",
@@ -144,10 +147,12 @@ const CardFlip = ({cards}) => {
         </div>
       </div>
       {/* </Col>
-    </Row>
-    </Container> */}
-    {/* </CardGroup>   */}
+      ))}
+    </Row>  */}
+    {/* </Container>  */}
+    {/* {/* </CardGroup>   */}
     </ReactCardFlip>
+    </CardGroup>
   );
 };
 
