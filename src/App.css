@@ -134,3 +134,13 @@ div .img-overlay{
 .card .back {
   transform: rotateY(180deg);
 }
+h3 .justify-content-center{
+  margin-top: 2px;
+}
+h4 .justify-content-center{
+  margin-Top: 10px;
+}
+p .justify-content-center{
+  margin-Top: 20px;
+
+}
