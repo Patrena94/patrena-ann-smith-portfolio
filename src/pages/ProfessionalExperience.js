@@ -11,14 +11,37 @@ import volunteerism from "./../assets/career/volunteerism.jpg";
 import HR from "./../assets/career/HR.jpg";
 import E from "./../assets/career/E.jpg";
 import AHR from "./../assets/career/AHR.jpg";
+import FlashcardList from "../components/FlashcardList";
 
 
 
 
 function ProfessionalExperience(props) {
   // const Cards =["Engineering", "Engineering"];
-  const Cards =[
-  {
+  // const Cards =[
+    const[flashcards, setFlashcards]=useState(Flashcards)
+    return (
+      <div>
+      <Hero title={props.title} />
+      <Content>
+        <p>
+          Talented Public Relations Marketing Specialist who has proven
+          excellence in all aspects of operations. Expert in establishing goals,
+          implementing effective work processes, building client relationships
+          to drive growth, and delivering quality customer service. Displayed
+          strategic insight and ambition when executing complex initiatives
+          serving company objectives. Metrics generator who can institute new
+          standards of excellence through measurable accolades. Talented coach
+          who can teach others to exceed expectations consistently.{" "}
+        </p> 
+      </Content>  
+      <div className="container">
+      <FlashcardList flashcards={flashcards} />
+      </div>
+      </div>
+    );
+    }
+    const Flashcards=[{
     id: 0,
     title:"EDUCATION & TRAINING",
     subtitle: "University of Connecticut",
@@ -136,28 +159,27 @@ function ProfessionalExperience(props) {
     description:"Waterbury Central Labor Council: Treasurer-PAC Fund Administrator  Fairfield County Central Labor Council: Recording Secretary      Hartford Central Labor Council: Vice President    Connecticut AFL-CIO: Vice President  Western Connecticut Area Labor Federation: Recording Secretary Treasurer  Eastern Connecticut Area Labor Federation:  Executive Board Member -Trustee", 
   }  
 ]
-  return (
-    <div>
-      <Hero title={props.title} />
-      <Content>
-        <p>
-          Talented Public Relations Marketing Specialist who has proven
-          excellence in all aspects of operations. Expert in establishing goals,
-          implementing effective work processes, building client relationships
-          to drive growth, and delivering quality customer service. Displayed
-          strategic insight and ambition when executing complex initiatives
-          serving company objectives. Metrics generator who can institute new
-          standards of excellence through measurable accolades. Talented coach
-          who can teach others to exceed expectations consistently.{" "}
-        </p> 
-      </Content>  
-  {Cards.map((card)=>( 
-    <CardFlip  cards={card} />
-    // <img
-    // src={require(``)}
-  ))}    
-      {/* <ReactCardFlip /> */}
-    </div> 
-  );
-  }
+  // return (
+    // <div>
+    //   <Hero title={props.title} />
+    //   <Content>
+    //     <p>
+    //       Talented Public Relations Marketing Specialist who has proven
+    //       excellence in all aspects of operations. Expert in establishing goals,
+    //       implementing effective work processes, building client relationships
+    //       to drive growth, and delivering quality customer service. Displayed
+    //       strategic insight and ambition when executing complex initiatives
+    //       serving company objectives. Metrics generator who can institute new
+    //       standards of excellence through measurable accolades. Talented coach
+    //       who can teach others to exceed expectations consistently.{" "}
+    //     </p> 
+    //   </Content>  
+  {/* {Cards.map((card)=>( 
+    <CardFlip  cards={card} /> */}
+  
+  {/* ))}     */}
+    
+  //   </div> 
+  // );
+  // }
 export default ProfessionalExperience;

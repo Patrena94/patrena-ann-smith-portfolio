@@ -17,12 +17,14 @@ class App extends React.Component {
   
     render() {
       return (
+        <div className="card-grid">
         <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
           <YOUR_BACK_COMPONENT>
             This is the back of the card.
             <button onClick={this.handleClick}>Click to flip</button>
           </YOUR_BACK_COMPONENT>
         </ReactCardFlip>
+        </div>
       )
     }
   }

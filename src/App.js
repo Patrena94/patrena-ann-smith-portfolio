@@ -11,6 +11,14 @@ import ProfessionalExperience from "./pages/ProfessionalExperience";
 import logo from "./assets/logo/PADSlogo(white).png";
 import Contact from "./pages/Contact"
 import "./App.css";
+import{ColorPicker, useColor} from "react-color-palette";
+import"react-color-palette/lib/css/styles.css";
+
+// export const App = () => {
+//   const [color, setColor] = useColor("hex", "#121212");
+
+//   return <ColorPicker width={456} height={228} color={color} onChange={setColor} hideHSV dark />;
+// };
 
 // import { Navbar } from 'react-bootstrap';
 

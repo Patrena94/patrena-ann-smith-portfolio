@@ -49,7 +49,7 @@ const CardFlip = ({cards}) => {
    {/* <Row md={1} lg={2} className="g-4">
      {Array.from({length:4}).map((_,idx)=>(
       <Col>  */}
-      <div
+      <div className="card"
         style={{
           backgroundColor: "black",
           height: 400,
@@ -62,7 +62,7 @@ const CardFlip = ({cards}) => {
           hoverShadow: "strong",
         }}
       >
-          <div className="card-body">
+          {/* <div className="card-body"> */}
         <h3
           className="justify-content-center"
           style={{
@@ -86,12 +86,12 @@ const CardFlip = ({cards}) => {
           Learn More
         </button>
         </div> 
-      </div>
+      {/* </div> */}
 
 
 
       
-      <div
+      <div className="card"
         style={{
           backgroundColor: "goldenrod",
           height: 800,
@@ -150,7 +150,7 @@ const CardFlip = ({cards}) => {
       ))}
     </Row>  */}
     {/* </Container>  */}
-    {/* {/* </CardGroup>   */}
+    {/* </CardGroup>    */}
     </ReactCardFlip>
     </CardGroup>
   );
