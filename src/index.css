@@ -34,10 +34,7 @@ p {
 .err-msg {color:red;
   padding: 20px 15px;
 }
-/* div .react-card-flipper{
-  border-radius: 20px;
-  box-shadow: 1px 1px .5px 0px rgba(0,0,0,0.75);
-} */
+
 /*CSS*/
 div.c-wrapper{
   width: 80%; /* for example */
@@ -52,4 +49,12 @@ margin: auto;
 .card-body{
   margin: 20px;
   box-shadow: 0px opx 3px 1px rgba(0,0,0,0.75);
+}
+#contact-form {
+  align-items: left;
+  color: red;
+  background-color:blue;
+}
+#contact-form .label{
+  align-items: right;
 }

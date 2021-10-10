@@ -14,10 +14,10 @@ function Footer() {
           Patrena A.D.Smith 
           </Col>
           <Col className="p-0" md={3} sm={12}>
-          33 Atwood Lane, East Hartford, Connecticut 06108 
+          <a href="https://github.com/Patrena94">github.com/Patrena94</a> 
           </Col>
           <Col className="p-0 d-flex justify-content-end" md={3}>
-          &copy; 2021 Patrena A. D. Smith, LLC.
+          &copy; 2021 Patrena A. D. Smith, LLC. 
           </Col>
         </Row>
       </Container>
