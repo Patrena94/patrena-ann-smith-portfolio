@@ -1,4 +1,4 @@
-import React,{ useState } from 'react'
+import React,{ useState } from 'react';
 
 
 export default function Flashcard({flashcard}) {
@@ -36,7 +36,7 @@ export default function Flashcard({flashcard}) {
         </h3>
         <img
           className="location-front-image justify-content-center"
-          src={flashcard.image}
+          src={require(flashcard.image).default}
           width="400"
           height="400"
           alt="healthcare Recruiter"
