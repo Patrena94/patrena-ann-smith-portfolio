@@ -2,7 +2,7 @@
  
 # License
    
-![Build Status](https://img.shields.io/github/license/Patrena94/portfolio-patrena-smith)  
+![Build Status](https://img.shields.io/github/license/Patrena94/patrena-ann-smith-portfolio)  
 
 
  # Description
