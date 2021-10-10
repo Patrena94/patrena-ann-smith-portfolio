@@ -1,4 +1,4 @@
-# portfolio-patrena-smith
+# Patrena Ann Smith 
  
 # License
    
@@ -20,48 +20,41 @@
 
  5.[Usage](#Usage)
 
- 6.[Screencastify](#Screencastify)
+ 6.[Contribution](#Contribution)
 
- 7.[Contribution](#Contribution)
+ 7.[Screenshots](#Screenshots)
 
- 8.[Test](#Test)
-
- 9.[Screenshots](#Screenshots)
-
- 10.[Sources](#Sources)
+ 8.[Sources](#Sources)
 
  # Questions  
 
- User with questions about this project should contact me at patrena@sbcglobal.net.  You may also review my portfolio at Patrena Github repository(https://github.com/Patrena94).
+ Employers interested in securing me as an asset should contact me at patrena@sbcglobal.net.  You may also review my portfolio at Patrena Github repository(https://github.com/Patrena94).
  
 
  
 # Installation
- The user will need install React.  The user's may install react by utilizing npx create-react-app portofolio <app name>. For the purpose of this project npm install -g create-react-app followed by npx create-react-app portfolio-patrena-smith.  The following program will need to be installed as npm install react-bootstrap@1.5.2; npm install react-bootstrap@next bootstrap@5.1.1; The user will need to typ npm start or nodemon to initiate the program directly in the browser at port 3000.
+ The user will need install React.  The user's may install react by utilizing npx create-react-app portofolio <app name>. For the purpose of this project npm install -g create-react-app followed by npx create-react-app portfolio-patrena-smith.  The following program will need to be installed as npm install react-bootstrap@1.5.2; npm install react-bootstrap@next bootstrap@5.1.1; npm i react-grid; npm i react-card-flip; npm i apollo-boost; npm i flashcard; npm i react-bootstrap-carousel, npm i axios; and npm i @sendgrid/mail.  The user will need to type npm start to initiate the program directly in the browser on an available localhost port.
 
 # Usage
  
-
-Users and Contributors may review a walk-through video of the above description by clicking the Screencastify link below:
-
-# Screencastify
-
-Heroku walk through video:
-
-
-
-# Heroku
+ An employer can review the portfolio and download a resume from within the portfolio by visting the following link: 
 
 
 # Contribution
-User interested in contributing to the project will need to create their own branch in GitHub.  They may submit changes and updates to be incorporated into the app for approval by the owner.  Individual may also fork the application to their individual accounts. 
-
-
-# Test
+Employers may provide feedback to the developer via email at patrena@sbcglobal.net.
  
 
 # Screenshots
 
+![image](https://user-images.githubusercontent.com/83892241/136703995-b85dd415-6829-41e5-9cb6-7ecbffddd3f0.png)
+![image](https://user-images.githubusercontent.com/83892241/136704014-c7791cb0-2892-4243-ad70-bd2326f97453.png)
+![image](https://user-images.githubusercontent.com/83892241/136704050-f18068d1-c132-4237-82c1-5de31e11c0df.png)
+![image](https://user-images.githubusercontent.com/83892241/136704081-760a14c1-d02e-4373-ac62-556da7a4b40f.png)
+![image](https://user-images.githubusercontent.com/83892241/136704098-25de0738-e439-441c-a013-bf6542e6e180.png)
+![image](https://user-images.githubusercontent.com/83892241/136704112-4263e93b-e438-4f03-8581-7998076de37a.png)
+![image](https://user-images.githubusercontent.com/83892241/136704121-ccee9324-27a1-4f97-adcd-1b486d9a7d80.png)
+![image](https://user-images.githubusercontent.com/83892241/136704128-f83d2cbc-64eb-40a6-9e03-9d1fe6cecee5.png)
+![image](https://user-images.githubusercontent.com/83892241/136704135-85fa5db3-6006-4039-b91a-eb764ee91027.png)
 
 # Sources
 
@@ -80,16 +73,13 @@ Banking career Photo by <a href="https://unsplash.com/@b0rno?utm_source=unsplash
 Engineering career Photo by <a href="https://unsplash.com/@sayyam197?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Umer Sayyam</a> on <a href="https://unsplash.com/s/photos/bridges?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
  Aerospace career Photo by <a href="https://unsplash.com/@spacex?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">SpaceX</a> on <a href="https://unsplash.com/s/photos/aerospace?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-Co-op Career
-
-
-Volunteer career
-  
   
 
 ❤️ Made with Love by Patrena, LLC. 2021
 ![Build Status](https://img.shields.io/github/languages/top/Patrena94/Smith-Corporation-Work-Scheduler)  
 ![build status](https://img.shields.io/github/languages/top/Patrena94/Mobile-Drive-in-Theater)
-![Build Status](https://img.shields.io/github/languages/top/Patrena94/Multi-City-Weather-Dashboard)
- 
+![Build Status](https://img.shields.io/github/languages/top/Patrena94/Multi-City-Weather-Dashboard)  
+![Build Status](https://img.shields.io/github/languages/top/Patrena94/patrena-ann-smith-portfolio)  
+![Build Status](https://img.shields.io/github/languages/top/Patrena94/PS-Corp-Budget-Tracker)
+![Build Status](https://img.shields.io/github/languages/top/Patrena94/stack-underflow)  
+
