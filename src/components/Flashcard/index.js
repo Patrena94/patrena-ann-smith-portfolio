@@ -1,10 +1,4 @@
 import React,{ useState } from 'react'
-import pr from "../../assets/career/pr.jpg";
-import Resume from "../../assets/career/Resume.jpg";
-import volunteerism from "../../assets/career/volunteerism.jpg";
-import HR from "../../assets/career/HR.jpg";
-import E from "../../assets/career/E.jpg";
-import AHR from "../../assets/career/AHR.jpg";
 
 
 export default function Flashcard({flashcard}) {

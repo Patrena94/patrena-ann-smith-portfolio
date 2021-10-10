@@ -1,7 +1,6 @@
-import react from "react";
 import Hero from "../components/Hero/index.js";
 import Content from "../components/Content";
-import React, {useState} from 'react';
+import React from 'react';
 import pads from "./../assets/photo/pads.jpg";
 
 
@@ -15,8 +14,7 @@ function About(props) {
       height="100"
       Padding="0"
       className="developer"
-     justifycontent="left"
-      alt="developer's photo"
+      alt="developer Patrena Ann Dametra Smith"
       />
         <p className="Introduction" style={{color:"#C49E93",fontsize: "24px",fontWeight: "bold",}}>
           Talented Public Relations Marketing Specialist who has proven

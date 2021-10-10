@@ -1,6 +1,4 @@
-import react from "react";
 import Hero from "../components/Hero/index.js";
-// import BootstrapCarouselComponent from '../components/Carousel/index.js';
 import ContactForm from "../components/Contact/index.js";
 
 function Contact(props) {

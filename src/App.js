@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react";
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
