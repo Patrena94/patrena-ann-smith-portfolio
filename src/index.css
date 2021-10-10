@@ -52,9 +52,67 @@ margin: auto;
 }
 #contact-form {
   align-items: left;
-  color: red;
-  background-color:blue;
+  /* color: red;
+  background-color:blue; */
 }
 #contact-form .label{
-  align-items: right;
+  align-items: left;
+}
+
+form {
+  width: 0%;
+  padding-left: 350px;
+}
+form label{
+  text-align: left;
+  margin: 0px;
+}
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 2px solid var(--dark);
+  outline: solid gold;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+  width:800px;
+}
+
+input:focus {
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+li {
+  list-style: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav li {
+  cursor: pointer;
+}
+
+textarea {
+  width: 800px;
+  height: 120px;
+  border: 3px solid gold;
+  padding: 5px;
+}
+
+.container {
+  width: 85%;
+  max-width: 800px;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+button {
+  background-color: #C49E93;
+  border:#914875;
+  color:gold;
+  border-radius: 25px;
+
 }
