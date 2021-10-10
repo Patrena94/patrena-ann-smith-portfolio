@@ -38,6 +38,8 @@
 # Usage
  
  An employer can review the portfolio and download a resume from within the portfolio by visting the following link: 
+ Heroku - https://patrena-ann-smith.herokuapp.com/resume
+ Github Pages - 
 
 
 # Contribution

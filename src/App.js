@@ -46,7 +46,7 @@ class App extends React.Component {
         <Container className="p=0" fluid={true}>
           {/* <Navbar className="border-bottom" bg="transparent" expand="lg"> */}
           <Navbar className="border-bottom" expand="lg">
-            <Navbar.Brand href="#home">
+            <Navbar.Brand>
               <img
                 src={logo}
                 width="100"
