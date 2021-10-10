@@ -19,7 +19,7 @@ function Resume(props) {
       <Hero title={props.title} />
       <Content>
         <p className="Introduction" style={{color:"#C49E93",fontsize: "24px",fontWeight: "bold",}}>
-        The <a href="./../assets/career/Resume.jpg">Professional Experience</a> of the talented Public Relations Specialist is attached for your perusal.{" "}
+        The <a href="https://docs.google.com/document/d/1AiR-9GXROgJEEeRgqxeoUYG4sXHsoR1L/edit?usp=sharing&ouid=105651289631703406613&rtpof=true&sd=true">Professional Experience</a> of the talented Public Relations Specialist is attached for your perusal.{" "}
         </p> 
       </Content>  
       <div className="container">
