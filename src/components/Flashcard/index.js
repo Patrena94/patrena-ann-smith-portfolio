@@ -36,7 +36,7 @@ export default function Flashcard({flashcard}) {
         </h3>
         <img
           className="location-front-image justify-content-center"
-          src={require(flashcard.image).default}
+          src={flashcard.image}
           width="400"
           height="400"
           alt="healthcare Recruiter"
