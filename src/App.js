@@ -5,12 +5,12 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Footer from "./components/Footer/index.js";
-import ProfessionalSummary from "./pages/ProfessionalSummary";
-import ProfessionalExperience from "./pages/ProfessionalExperience";
+import Portfolio from "./pages/Portfolio";
+import Resume from "./pages/Resume";
 import logo from "./assets/logo/PADSlogo(white).png";
 import Contact from "./pages/Contact"
+import About from "./pages/About";
 import "./App.css";
-import{ColorPicker, useColor} from "react-color-palette";
 import"react-color-palette/lib/css/styles.css";
 
 
@@ -21,20 +21,20 @@ class App extends React.Component {
       title: "Patrena Ann Smith",
       headerLinks: [
         { title: "About", path: "/" },
-        { title: "Professional Summary", path: "/professionalSummary" },
-        { title: "Professional Experience", path: "/professionalExperience" },
+        { title: "Portfolio", path: "/portfolio" },
+        { title: "Resume", path: "/resume" },
         { title: "Contact", paht: "/contact" },
       ],
-      professionalSummary: {
+      portfolio: {
         title: "Jacqueline of all Trades",
         subTitle: "Ventures into Web development",
         subscript: "explorer my ventures below!",
       },
-      portfolio: {
-        title: "Projects",
+      about: {
+        title: "Professional Summary",
       },
-      professionalExperience: {
-        title: "Resume",
+      resume: {
+        title: "Professional Experience",
       },
       contact: {
         title: "Build the Universe Together",
@@ -63,12 +63,17 @@ class App extends React.Component {
                 <Link className="nav-link" style={{
             color: "gold",
           }} to="/">
-                  Professional Summary
+                  About
                 </Link>
                 <Link className="nav-link" style={{
             color: "gold",
-          }} to="/professionalExperience">
-                  Professional Experience
+          }} to="/portfolio">
+                  Portfolio
+                </Link>
+                <Link className="nav-link" style={{
+            color: "gold",
+          }} to="/resume">
+                  Resume
                 </Link>
                 <Link className="nav-link" style={{
             color: "gold",
@@ -82,19 +87,28 @@ class App extends React.Component {
             path="/"
             exact
             render={() => (
-              <ProfessionalSummary
-                title={this.state.professionalSummary.title}
-                subTitle={this.state.professionalSummary.subTitle}
-                subscript={this.state.professionalSummary.subscript}
+              <About
+                title={this.state.about.title} 
               />
             )}
           />
           <Route
-            path="/professionalExperience"
+            path="/portfolio"
             exact
             render={() => (
-              <ProfessionalExperience
-                title={this.state.professionalExperience.title}
+              <Portfolio
+                title={this.state.portfolio.title}
+                subTitle={this.state.portfolio.subTitle}
+                subscript={this.state.portfolio.subscript}
+              />
+            )}
+          />
+           <Route
+            path="/resume"
+            exact
+            render={() => (
+              <Resume
+                title={this.state.resume.title}
               />
             )}
           />

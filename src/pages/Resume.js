@@ -2,7 +2,7 @@ import react from "react";
 import Hero from "../components/Hero/index.js";
 import Content from "../components/Content";
 import React, {useState} from 'react';
-import Resume from "./../assets/career/Resume.jpg";
+// import Resume from "./../assets/career/Resume.jpg";
 import volunteerism from "./../assets/career/volunteerism.jpg";
 import HR from "./../assets/career/HR.jpg";
 import E from "./../assets/career/E.jpg";
@@ -12,7 +12,7 @@ import FlashcardList from "../components/FlashcardList";
 
 
 
-function ProfessionalExperience(props) {
+function Resume(props) {
     const[flashcards, setFlashcards]=useState(Flashcards)
     return (
       <div>
@@ -148,4 +148,4 @@ function ProfessionalExperience(props) {
   }  
 ]
   
-export default ProfessionalExperience;
+export default Resume;

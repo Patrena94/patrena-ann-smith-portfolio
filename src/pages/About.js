@@ -7,7 +7,7 @@ import React, {useState} from 'react';
 function About(props) {
     return (
       <div>
-      <Hero title={props.title} />
+      <Hero title={props.title}/>
       <Content>
         <p className="Introduction" style={{color:"#C49E93",fontsize: "24px",fontWeight: "bold",}}>
           Talented Public Relations Marketing Specialist who has proven
