@@ -5,7 +5,6 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Footer from "./components/Footer/index.js";
-// import Resume from "./pages/Resume";
 import ProfessionalSummary from "./pages/ProfessionalSummary";
 import ProfessionalExperience from "./pages/ProfessionalExperience";
 import logo from "./assets/logo/PADSlogo(white).png";
@@ -14,13 +13,6 @@ import "./App.css";
 import{ColorPicker, useColor} from "react-color-palette";
 import"react-color-palette/lib/css/styles.css";
 
-// export const App = () => {
-//   const [color, setColor] = useColor("hex", "#121212");
-
-//   return <ColorPicker width={456} height={228} color={color} onChange={setColor} hideHSV dark />;
-// };
-
-// import { Navbar } from 'react-bootstrap';
 
 class App extends React.Component {
   constructor(props) {
@@ -68,19 +60,21 @@ class App extends React.Component {
             <Navbar.Toggle className="border=0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" style={{
+            color: "gold",
+          }} to="/">
                   Professional Summary
                 </Link>
-                {/* <Link className="nav-link" to="/resume">
-                  Resume 
-                </Link> */}
-                <Link className="nav-link" to="/professionalExperience">
+                <Link className="nav-link" style={{
+            color: "gold",
+          }} to="/professionalExperience">
                   Professional Experience
                 </Link>
-                <Link className="nav-link" to="/Contact">
+                <Link className="nav-link" style={{
+            color: "gold",
+          }} to="/Contact">
                   Contact
                 </Link>
-                {/* <ContactForm></ContactForm> */}
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -95,11 +89,6 @@ class App extends React.Component {
               />
             )}
           />
-           {/* <Route
-            path="/resume"
-            exact
-            render={() => <resume title={this.state.resume.title} />} */}
-          {/* />  */}
           <Route
             path="/professionalExperience"
             exact

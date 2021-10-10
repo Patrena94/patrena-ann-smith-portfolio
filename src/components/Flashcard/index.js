@@ -18,8 +18,10 @@ export default function Flashcard({flashcard}) {
     <div className ="front"
       style={{
         backgroundColor: "black",
+        padding: 0,
         height: 600,
         width: 600,
+        flexDirection: 'column',
         color: "goldenrod",
         display: "flex",
         justifyContent: "center",
@@ -45,16 +47,13 @@ export default function Flashcard({flashcard}) {
           height="400"
           alt="healthcare Recruiter"
         />
-        {/* <button className="front-flip-button" onClick={handleClick}>
-          Learn More
-        </button> */}
            </div>
 
            <div className="back"style={{
           backgroundColor: "goldenrod",
           height: 600,
           padding: 0,
-          width: "600px",
+          width: 600,
           color: "black",
           display: "flex",
           flexDirection: "column",

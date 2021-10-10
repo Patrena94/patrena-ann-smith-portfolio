@@ -24,7 +24,8 @@ body {
   font-family: 'Poiret One', cursive;
 }
 p {
-  color: goldenrod;
+  color: #914875;
+  font-size: 18px;
 }
 .success-msg {
   color: 57A 7223px;

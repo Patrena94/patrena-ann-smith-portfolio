@@ -38,7 +38,7 @@
 }
 body{
   /* background-color: black; */
-  color:gold
+  color:gold;
 }
 .h2 {
   color:gold;
@@ -49,24 +49,15 @@ body .bg-dark{
   margin-bottom: 100px ;
   box-shadow: 100px 10px 5px 0px rgba(0,0,0,0.75);
 }
- /* div {
-  border-radius: 20px;
-  box-shadow: 100px 10px 5px 0px rgba(0,0,0,0.75);
-}  */
-#Jumbotron {
+.jumbotron-fluid {
   background-repeat:no-repeat, no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 50px;
   font-weight: bold;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding: 100px;
-  border: radius 75px;
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  background-color: black;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 .jumbotron h1, p{
-  /* background-color: goldenrod; */
   padding:50px;
 }
 /*CSS*/
@@ -83,8 +74,7 @@ margin: auto;
 .container-fluid{
   position: relative;
   text-align: center;
-  color:goldenrod;
-  /* margin: 5px; */
+  color:#914875;
 }
 div .img-overlay{
   position:absolute;
@@ -93,7 +83,6 @@ div .img-overlay{
 }
 
 .container{
-  /* max-width: 900 px; */
   margin: 1rem 2rem;
 }
 .card-grid {
