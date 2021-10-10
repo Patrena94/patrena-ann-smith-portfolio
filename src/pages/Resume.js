@@ -1,12 +1,6 @@
-import react from "react";
 import Hero from "../components/Hero/index.js";
 import Content from "../components/Content";
 import React, {useState} from 'react';
-// import Resume from "./../assets/career/Resume.jpg";
-import volunteerism from "./../assets/career/volunteerism.jpg";
-import HR from "./../assets/career/HR.jpg";
-import E from "./../assets/career/E.jpg";
-import AHR from "./../assets/career/AHR.jpg";
 import FlashcardList from "../components/FlashcardList";
 
 

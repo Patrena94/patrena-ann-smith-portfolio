@@ -52,8 +52,6 @@ margin: auto;
 }
 #contact-form {
   align-items: left;
-  /* color: red;
-  background-color:blue; */
 }
 #contact-form .label{
   align-items: left;
@@ -115,4 +113,9 @@ button {
   color:gold;
   border-radius: 25px;
 
+}
+.developer{
+  box-shadow:  0 0 8px 4px rgba(0, 0, 0, 0.75);
+  margin-top: 50px;
+  margin-left: 0px;
 }
