@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import portfoliohtmlcss from "./../../assets/carousel/portfoliohtmlcss.png";
+import SalonXperience from "./../../assets/carousel/SalonXperience.png";
 
 class BootstrapCarouselComponent extends React.Component {
   render() {
@@ -309,6 +310,51 @@ class BootstrapCarouselComponent extends React.Component {
                       </a>{" "}
                       and
                       <a href="https://github.com/Patrena94/Patrena-A.-D.-Smith">
+                        github respository
+                      </a>
+                    </p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item Interval={2000}>
+                  <img
+                    className="d-block w-100"
+                    src={SalonXperience}
+                    width="800"
+                    height="800"
+                    text="Stack_Underflo"
+                    alt="Stack_Underflo"
+                  />
+                  <Carousel.Caption>
+                    <h3
+                      className="title"
+                      style={{
+                        color: "gold",
+                        display: "flex",
+                        justifyContent: "center",
+                        textAlign: "center",
+                        text: "bold",
+                        fontSize: "36px",
+                      }}
+                    >
+                      Salon Xperience
+                    </h3>
+                    <p
+                      className="overview"
+                      style={{
+                        color: "#C49E93",
+                        textAlign: "center",
+                        text: "bold",
+                        fontSize: "24px",
+                      }}
+                    >
+                      Salon-Xperience  is a Single Page Web Application which supports 3 different types of users: Client, Stylist  & Admin. 
+Users can create a profile, book/view their appointments, purchase services for a future date and manage their hair experience. 
+The application was built using the MERN stack and  performs CRUD operations supported by GRAPHQL.You may review the{" "}
+                      <a href="https://salon-xperience.herokuapp.com/">
+                        deployed link
+                      </a>{" "}
+                      and
+                      <a href="https://github.com/Patrena94/salon-xperience">
                         github respository
                       </a>
                     </p>
